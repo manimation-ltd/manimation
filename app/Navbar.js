@@ -1,5 +1,6 @@
 "use client";
 import React, {useState} from 'react';
+import variables from './styles/variables.module.scss'
 
 const Navbar = () => {
 
@@ -21,19 +22,19 @@ const Navbar = () => {
                     <div className='hidden md:block'>
                         <div className='ml-4 flex items-center space-x-4'>
                             <a href='/'
-                            className='text-white hover:bg-red-700 hover:text-black rounded-lg p-2'>
+                            className={variables.topNavLink}>
                                 Home
                             </a>
                             <a href='/'
-                            className='text-white hover:bg-red-700 hover:text-black rounded-lg p-2'>
+                            className={variables.topNavLink}>
                                 About
                             </a>
                             <a href='/'
-                            className='text-white hover:bg-red-700 hover:text-black rounded-lg p-2'>
+                            className={variables.topNavLink}>
                                 Portfolio
                             </a>
                             <a href='/'
-                            className='text-white hover:bg-red-700 hover:text-black rounded-lg p-2'>
+                            className={variables.topNavLink}>
                                 Contact
                             </a>
                     </div>
@@ -82,19 +83,20 @@ const Navbar = () => {
                 <div className='md:hidden'>
                     <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 w-full items-center justify-center '>
                     <a href='/'
-                            className='flex justify-center text-white block w-full hover:bg-red-700 hover:text-black rounded-lg p-2'>
+                            className={variables.button}>
                                 Home
                             </a>
                             <a href='/'
-                            className='flex justify-center text-white block w-full hover:bg-red-700 hover:text-black rounded-lg p-2'>
+                            className={variables.button}>
                                 About
                             </a>
                             <a href='/'
-                            className='flex justify-center text-white block w-full hover:bg-red-700 hover:text-black rounded-lg p-2'>
+                            className={variables.button}>
+
                                 Portfolio
                             </a>
                             <a href='/'
-                            className='flex justify-center text-white block w-full hover:bg-red-700 hover:text-black rounded-lg p-2'>
+                            className={variables.button}>
                                 Contact
                             </a>
                     </div>
